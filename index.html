@@ -1,170 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="main.css">
   <title>Liam Robertson's website</title>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <!-- Custom CSS (style.css) -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 
-<html>
-  <head>
-    <!--  The first link tag pulls in Bootstrap's CSS:   -->
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-
-    <!--  After the bootstrap CSS, we want to load our own CSS so that we can tweak things that aren't handled by Bootstrap.   -->
-
-    <link rel="stylesheet" href="style.css" />
-  </head>
-
-  <body>
+  <!-- Main Content -->
+  <div class="container">
     <p>
       This is a basic grid using Bootstrap. Read more about bootstrap grids
-      <a href="https://getbootstrap.com/docs/5.3/layout/grid/" target="new"
-        >on the Boostrap site.</a
-      >
+      <a href="https://getbootstrap.com/docs/5.3/layout/grid/" target="new">on the Bootstrap site.</a>
     </p>
 
-    <!--  A grid is always started with a container class, which must be closed at the end.    -->
-
-    <div class="container">
-      <!--  We start of by creating a row:      -->
-
-      <div class="row">
-        <!--  Then, add at least one column in that row.      -->
-
-        <div class="col">
-          <p>This is a row that has only one column.</p>
-        </div>
+    <div class="row">
+      <div class="col">
+        <p>This is a row that has only one column.</p>
       </div>
-
-      <!--  To add a row with more columns, just include more columns in it     -->
-
-      <div class="row">
-        
-        <div class="col-sm-10">This is a the first column in this row.</div>
-
-        <div class="col-sm-2">This is the second column in this row.</div>
-      </div>
-
-      <!--  Then just keep doing this with additional rows that have the number of columns you choose.     -->
-
-      <div class="row">
-        <div class="col">This is a the first column in this row.</div>
-
-        <div class="col">This is the second column in this row.</div>
-
-        <div class="col">This is the third column in this row.</div>
-      </div>
-
-      <div class="row">
-        <div class="col">This is a row with one column as a footer.</div>
-      </div>
-
-      <!--  And finally, be sure to close your container class div.    -->
     </div>
 
-    <br />
-
-    <!-- Now, let's add a grid that has variable width columns.     -->
-
-    <p>
-      This is a grid using Bootstrap that uses different sized columns. Read
-      more about bootstrap grids
-      <a href="https://getbootstrap.com/docs/5.3/layout/grid/" target="new"
-        >on the Boostrap site.</a
-      >
-    </p>
-
-    <!--  A grid is always started with a container class, which must be closed at the end.    -->
-
-    <div class="container">
-      <!--  We start of by creating a row:      -->
-
-      <div class="row">
-        <!--  Then, add at least one column in that row.      -->
-
-        <div class="col">
-          <p>This is a row that has only one column.</p>
-        </div>
-      </div>
-
-      <!--  To add a row with more columns, just include more columns in it     -->
-
-      <div class="row">
-        <div class="col-sm-4">This is a the first column in this row. It takes up 1/3 of the page. Because it is listed first, on a small screen it will appear above the second column.</div>
-
-        <div class="col-sm-8">This is the second column in this row. It takes up 2/3 of the page. Because it is listed second, it will move below the first column on a small screen.</div>
-      </div>
-
-      <!--  Then just keep doing this with additional rows that have the number of columns you choose.     -->
-
-      <div class="row">
-        <div class="col-sm-8">This is a the first column in this row.</div>
-
-        <div class="col-sm-3">This is the second column in this row.</div>
-
-        <div class="col-sm-1">This is the third column in this row.</div>
-      </div>
-
-      <div class="row">
-        <div class="col">This is a row with one column as a footer.</div>
-      </div>
-
-      <!--  And finally, be sure to close your container class div.    -->
+    <div class="row">
+      <div class="col-sm-10">This is the first column in this row.</div>
+      <div class="col-sm-2">This is the second column in this row.</div>
     </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    
-    
-  </body>
+    <div class="row">
+      <div class="col">This is the first column in this row.</div>
+      <div class="col">This is the second column in this row.</div>
+      <div class="col">This is the third column in this row.</div>
+    </div>
 
+    <div class="row">
+      <div class="col">This is a row with one column as a footer.</div>
+    </div>
+  </div>
+
+  <br />
+
+  <p>
+    This is a grid using Bootstrap that uses different sized columns. Read
+    more about bootstrap grids
+    <a href="https://getbootstrap.com/docs/5.3/layout/grid/" target="new">on the Bootstrap site.</a>
+  </p>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <p>This is a row that has only one column.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4">This is the first column in this row. It takes up 1/3 of the page.</div>
+      <div class="col-sm-8">This is the second column in this row. It takes up 2/3 of the page.</div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-8">This is the first column in this row.</div>
+      <div class="col-sm-3">This is the second column in this row.</div>
+      <div class="col-sm-1">This is the third column in this row.</div>
+    </div>
+
+    <div class="row">
+      <div class="col">This is a row with one column as a footer.</div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+</body>
 
 </html>
