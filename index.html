@@ -14,7 +14,13 @@
     crossorigin="anonymous"
   />
   <!-- Custom CSS (style.css) -->
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    .centered-text {
+      text-align: center;
+      font-size: 1.5rem; /* Increase the font size */
+      font-weight: bold;
+    }
+  </style>
 </head>
 
 <body>
@@ -32,60 +38,54 @@
         <li class="nav-item">
           <a class="nav-link" href="#"></a>
         </li>
-        <li class="nav-item dropdown">
-          
-          </ul>
-        </li>
-       
+      </ul>
     </div>
   </div>
 </nav>
-  <!-- Main Content -->
-  <div class="container">
-    <p>
-      This is a basic grid using Bootstrap. Read more about bootstrap grids
-      <a href="https://getbootstrap.com/docs/5.3/layout/grid/" target="new">on the Bootstrap site.</a>
-    </p>
 
-    <div class="row">
-      <div class="col">
-        <p>This is a row that has only one column.</p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-1">This is the first column in this row.</div>
-      <div class="col-sm-11">This is the second column in this row.</div>
-    </div>
-
-    <div class="row">
-      <div class="col">This is the first column in this row.</div>
-      <div class="col">This is the second column in this row.</div>
-      <div class="col">This is the third column in this row.</div>
-    </div>
-
-    <div class="row">
-      <div class="col">This is a row with one column as a footer.</div>
-    </div>
-  </div>
-
-  <br />
-
-  <p>
-    This is a grid using Bootstrap that uses different sized columns. Read
-    more about bootstrap grids
+<!-- Main Content -->
+<div class="container">
+  <p class="centered-text">
+    This is a basic grid using Bootstrap. Read more about bootstrap grids
     <a href="https://getbootstrap.com/docs/5.3/layout/grid/" target="new">on the Bootstrap site.</a>
   </p>
 
-  
+  <div class="row">
+    <div class="col">
+      <p>This is a row that has only one column.</p>
+    </div>
   </div>
 
-  <!-- Bootstrap JS -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"
-  ></script>
+  <div class="row">
+    <div class="col-sm-1">This is the first column in this row.</div>
+    <div class="col-sm-11">This is the second column in this row.</div>
+  </div>
+
+  <div class="row">
+    <div class="col">This is the first column in this row.</div>
+    <div class="col">This is the second column in this row.</div>
+    <div class="col">This is the third column in this row.</div>
+  </div>
+
+  <div class="row">
+    <div class="col">This is a row with one column as a footer.</div>
+  </div>
+</div>
+
+<br />
+
+<p>
+  This is a grid using Bootstrap that uses different sized columns. Read
+  more about bootstrap grids
+  <a href="https://getbootstrap.com/docs/5.3/layout/grid/" target="new">on the Bootstrap site.</a>
+</p>
+
+<!-- Bootstrap JS -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"
+></script>
 </body>
 
 </html>
