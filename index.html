@@ -15,77 +15,65 @@
   />
   <!-- Custom CSS (style.css) -->
   <style>
+    /* Remove default padding from the container */
+    .container {
+      padding: 0;
+    }
+
     .centered-text {
       text-align: center;
       font-size: 1.5rem; /* Increase the font size */
       font-weight: bold;
     }
+
+    /* Optional: Remove padding from the navbar */
+    .navbar {
+      padding: 0;
+    }
+
+    /* Optional: Remove margin around body */
+    body {
+      margin: 0;
+    }
+
+    /* Optional: Allow images to scale within container */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
   </style>
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Robertsonian Decay</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"></a>
-        </li>
-      </ul>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Robertsonian Decay</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<!-- Main Content -->
-<div class="container">
-  <p class="centered-text">
-    This is a basic grid using Bootstrap. Read more about bootstrap grids
-    <a href="https://getbootstrap.com/docs/5.3/layout/grid/" target="new">on the Bootstrap site.</a>
-  </p>
+  <!-- Main Content -->
+  <div class="container">
+    <p class="centered-text">
+      This is a basic grid using Bootstrap. Read more about bootstrap grids
+      <a href="https://getbootstrap.com/docs/5.3/layout/grid/" target="new">on the Bootstrap site.</a>
+    </p>
 
-  <div class="row">
-    <div class="col">
-      <p>This is a row that has only one column.</p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-1">This is the first column in this row.</div>
-    <div class="col-sm-11">This is the second column in this row.</div>
-  </div>
-
-  <div class="row">
-    <div class="col">This is the first column in this row.</div>
-    <div class="col">This is the second column in this row.</div>
-    <div class="col">This is the third column in this row.</div>
-  </div>
-
-  <div class="row">
-    <div class="col">This is a row with one column as a footer.</div>
-  </div>
-</div>
-
-<br />
-
-<p>
-  This is a grid using Bootstrap that uses different sized columns. Read
-  more about bootstrap grids
-  <a href="https://getbootstrap.com/docs/5.3/layout/grid/" target="new">on the Bootstrap site.</a>
-</p>
-
-<!-- Bootstrap JS -->
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-  crossorigin="anonymous"
-></script>
-</body>
-
-</html>
+    <!-- Row with an example of a data image -->
+    <div class="row">
+      <div class="col">
+        <p>This is a row that has only one column.</p>
+        <!-- Example of embedding a data image -->
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAIAAADOfq9wAAAAmklEQVR4nOzdf3bU5b7/8d9IkCkG3yC67NzXjWZXVQL0gF9gpVgRbgpFk9laQAioFWkXZvFZVV6We9yAV7Fw61zHsi32ODPZTJHLj6rExKFxCFgyqgSk7aSZsi88wnT3mff1yaVnI7S3Rr90oBRJKUSZjoRUv8t91+XOsqHX5W6aJopFb0Ssd7AKdGepH2ZYCTdf2lDFmVg8/JlBFxtAYJd9bmn7DWiS4aUGNlTg1zIgUyFCd79qSTX9lgf1LOdtnwSoQfOxZXhw7zKNqrJ9pksKoz12ImjE9
