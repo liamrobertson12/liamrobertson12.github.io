@@ -26,8 +26,14 @@
     /* Centered text style */
     .centered-text {
       text-align: center;
-      font-size: 1.5rem;
+      font-size: 2rem;
       font-weight: bold;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
 
     /* Remove default padding from container */
@@ -41,7 +47,9 @@
       height: auto;
     }
 
-    .banner-image {
+    /* Banner Image Container */
+    .banner-container {
+      position: relative;
       width: 100%;
       height: auto;
     }
@@ -79,12 +87,18 @@
     <div class="row mb-4">
       <!-- Left Column: Funny Image -->
       <div class="col-12 col-sm-6 col-md-4">
-     <div style="min-height:395px" id="datawrapper-vis-0rSRp"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/0rSRp/embed.js" charset="utf-8" data-target="#datawrapper-vis-0rSRp"></script><noscript><img src="https://datawrapper.dwcdn.net/0rSRp/full.png" alt="" /></noscript></div>
+        <div style="min-height:395px" id="datawrapper-vis-0rSRp">
+          <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/0rSRp/embed.js" charset="utf-8" data-target="#datawrapper-vis-0rSRp"></script>
+          <noscript><img src="https://datawrapper.dwcdn.net/0rSRp/full.png" alt="" /></noscript>
+        </div>
       </div>
 
-      <!-- Center Column: Banner Image -->
+      <!-- Center Column: Banner Image with Text Overlay -->
       <div class="col-12 col-sm-6 col-md-4">
-        <img src="https://www.shutterstock.com/image-vector/june-21st-2023-portrait-donald-600nw-2320981319.jpg" alt="Banner Image" class="banner-image">
+        <div class="banner-container">
+          <img src="https://www.shutterstock.com/image-vector/june-21st-2023-portrait-donald-600nw-2320981319.jpg" alt="Banner Image" class="banner-image">
+          <div class="centered-text">Welcome to Robertsonian Decay</div>
+        </div>
       </div>
 
       <!-- Right Column: Story Text -->
@@ -113,11 +127,13 @@
 
       <!-- Right Column: Funny Image 2 -->
       <div class="col-12 col-md-4">
-       <div style="min-height:395px" id="datawrapper-vis-ob01L"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/ob01L/embed.js" charset="utf-8" data-target="#datawrapper-vis-ob01L"></script><noscript><img src="https://datawrapper.dwcdn.net/ob01L/full.png" alt="" /></noscript></div>
+        <div style="min-height:395px" id="datawrapper-vis-ob01L">
+          <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/ob01L/embed.js" charset="utf-8" data-target="#datawrapper-vis-ob01L"></script>
+          <noscript><img src="https://datawrapper.dwcdn.net/ob01L/full.png" alt="" /></noscript>
+        </div>
       </div>
     </div>
-
-   
+  </div>
 
   <!-- Bootstrap JS -->
   <script
